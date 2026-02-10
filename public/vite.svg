@@ -1,0 +1,10 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>千咲 - 剪</title>
+  <!-- 背景：纯黑圆形 -->
+  <circle cx="64" cy="64" r="58" fill="#0A0A0A"/>
+  <!-- 抽象剪刀轮廓 -->
+  <path d="M44 40L64 52L84 40" stroke="#F0F0F0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M44 88L64 76L84 88" stroke="#F0F0F0" stroke-width="6" stroke-linecap="round"/>
+  <!-- 核心：红色菱形瞳孔 -->
+  <path d="M64 52L58 64L64 76L70 64Z" fill="#DC2626"/>
+</svg>
