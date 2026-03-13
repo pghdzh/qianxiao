@@ -36,10 +36,7 @@
         <div class="scissor-cut" :class="{ active: isPlaying }"></div>
       </button>
       <audio ref="bgmPlayer" loop>
-        <source
-          src="http://36.150.237.25:3000/music/结线之花.mp3"
-          type="audio/mpeg"
-        />
+        <source :src="musicUrl" type="audio/mpeg" />
         您的浏览器不支持音频元素
       </audio>
     </div>
@@ -148,7 +145,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount, computed } from "vue";
 import { io } from "socket.io-client";
-
+const musicUrl = import.meta.env.VITE_API_BASE_URL + "/music/结线之花.mp3";
 // 导航项数据
 const navItems = [
   { name: "星炬首页", path: "/" },
@@ -197,7 +194,7 @@ onBeforeUnmount(() => {
 // 在线人数功能
 const siteId = "qianxiao";
 const onlineCount = ref<number | null>(null);
-const socket: any = io("http://36.150.237.25:3000", {
+const socket: any = io(import.meta.env.VITE_API_BASE_URL, {
   query: { siteId },
 });
 
