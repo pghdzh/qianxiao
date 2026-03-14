@@ -91,7 +91,7 @@
 
           <!-- 外部链接 -->
           <a
-            href="http://36.150.237.25/#/redirector"
+            href="https://slty.site/#/redirector"
             target="_blank"
             rel="noopener"
             class="dropdown-item external"
@@ -119,7 +119,7 @@
       </RouterLink>
 
       <a
-        href="http://36.150.237.25/#/redirector"
+        href="https://slty.site/#/redirector"
         target="_blank"
         rel="noopener"
         class="nav-item external"
